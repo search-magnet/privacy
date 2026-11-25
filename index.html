@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="robots" content="index,follow">
   <title>Magnet Search 隐私政策 · Privacy Policy</title>
-  <meta name="description" content="Magnet Search（today.auburn.yingshi.magnet）的隐私政策，说明本地数据、搜索、网络请求、权限和联系方式。">
+  <meta name="description" content="Magnet Search（today.auburn.yingshi.magnet）的隐私政策，说明信息收集、日志、Cookie、权限、第三方服务、数据删除和联系方式。">
   <style>
     :root {
       --bg: #0d0f12;
@@ -126,8 +126,9 @@
     <div class="kicker">Magnet Search · Privacy Policy</div>
     <h1>隐私政策</h1>
     <p class="lead">
-      本政策说明 Magnet Search Android 应用如何处理你的信息。简单说：收藏和搜索历史只保存在你的手机上，
-      搜索不联网，应用不包含广告或统计 SDK。
+      本政策说明 Magnet Search Android 应用（包名 today.auburn.yingshi.magnet）如何处理你的信息。
+      Magnet Search 由开发者 bzl 提供，按现状提供使用。简单说：收藏和搜索历史只保存在你的手机上，
+      搜索不联网，应用不包含广告、统计或崩溃上报 SDK。
     </p>
     <div class="meta">
       <span class="chip"><span class="dot"></span> 生效日期：2026-11-25</span>
@@ -135,30 +136,43 @@
       <span class="chip">适用版本：1.1.2 及以上</span>
     </div>
     <nav aria-label="目录">
-      <a href="#zh-1">本地数据</a>
-      <a href="#zh-3">网络请求</a>
-      <a href="#zh-4">权限</a>
-      <a href="#zh-6">删除数据</a>
+      <a href="#zh-1">信息收集</a>
+      <a href="#zh-3">日志</a>
+      <a href="#zh-4">Cookie</a>
+      <a href="#zh-5">权限</a>
+      <a href="#zh-6">第三方服务</a>
+      <a href="#zh-7">数据删除</a>
       <a href="#en">English</a>
     </nav>
   </header>
 
   <main>
     <article class="card">
+      <section id="zh-0">
+        <p>
+          本政策适用于 Magnet Search Android 应用。使用本应用即表示你已阅读并同意本政策所述的信息处理方式。
+          本政策中的术语与适用法律及 Google Play 服务条款中的含义一致。
+        </p>
+        <p class="muted">
+          本页同时提供中文和英文版本；如有不一致，以中文版本为准。
+        </p>
+      </section>
+
       <section id="zh-1">
-        <h2><span class="num">01</span>我们保存哪些数据</h2>
+        <h2><span class="num">01</span>我们收集与保存的信息</h2>
         <p>
           Magnet Search 不需要注册账号，也不要求你提供姓名、邮箱、手机号、位置或其他身份信息。
-          应用只在本机保存以下偏好和操作记录：
+          应用只在本机保存以下内容：
         </p>
         <table>
           <tr><th>收藏的磁力</th><td>保存你点过星标的磁力 infohash，用于在“我的收藏”中展示。</td></tr>
-        <tr><th>搜索历史</th><td>保存最近最多 20 条搜索词，去重并按时间倒序排列，用于快速回填搜索。</td></tr>
+          <tr><th>搜索历史</th><td>保存最近最多 20 条搜索词，去重并按时间倒序排列，用于快速回填搜索。</td></tr>
           <tr><th>语言偏好</th><td>保存你选择的界面语言（中文或英文）。</td></tr>
         </table>
         <p class="muted">
           上述数据仅存储在本应用的 Android 私有存储（SharedPreferences）中，不会上传到我们的服务器，
-          也不会提供给广告商、分析服务或其他第三方。
+          也不会提供给广告商、分析服务或其他第三方。应用不主动读取 Android Advertising ID，
+          也不收集设备唯一标识。
         </p>
       </section>
 
@@ -171,7 +185,7 @@
       </section>
 
       <section id="zh-3">
-        <h2><span class="num">03</span>网络请求与服务器日志</h2>
+        <h2><span class="num">03</span>日志数据</h2>
         <p>
           为了获取公开磁力索引的增量更新，应用会访问开发者自行运维的接口：
           <code>https://yingshi.auburn.today/api/app/sync</code>。
@@ -190,12 +204,25 @@
           这些日志仅用于服务安全、防滥用、故障排查和容量统计，不用于广告、用户画像或出售数据。
         </div>
         <p class="muted">
-          如果你通过应用打开外部网页或应用商店，目标网站会按照它自己的隐私政策处理数据，本政策不覆盖第三方网站。
+          应用不集成崩溃上报 SDK。如果你通过 Google Play 或 Android 系统产生崩溃、诊断或安装数据，
+          这些平台侧数据由 Google 按其隐私政策处理，不属于应用内收集。
         </p>
       </section>
 
       <section id="zh-4">
-        <h2><span class="num">04</span>应用权限</h2>
+        <h2><span class="num">04</span>Cookie 与本地存储</h2>
+        <p>
+          本应用是原生 Android 应用，不使用 Cookie 作为账号标识或跨应用追踪手段；
+          收藏、搜索历史和语言偏好使用 Android SharedPreferences 保存在本机。
+        </p>
+        <p class="muted">
+          如果你从应用打开外部网页或应用商店，目标网站可能使用 Cookie 或类似技术，
+          并按照它自己的隐私政策处理数据。本政策不覆盖第三方网站。
+        </p>
+      </section>
+
+      <section id="zh-5">
+        <h2><span class="num">05</span>应用权限</h2>
         <p>当前版本只申请以下 Android 权限：</p>
         <table>
           <tr><th><code>INTERNET</code></th><td>用于获取公开磁力索引增量更新。</td></tr>
@@ -207,11 +234,15 @@
         </p>
       </section>
 
-      <section id="zh-5">
-        <h2><span class="num">05</span>第三方 SDK 与数据共享</h2>
+      <section id="zh-6">
+        <h2><span class="num">06</span>第三方服务与数据共享</h2>
         <p>
           应用不包含广告 SDK、统计分析 SDK、崩溃上报 SDK、推送 SDK 或社交登录 SDK，
-          不出售、出租或交换任何用户数据。
+          也不主动读取 Android Advertising ID。我们不出售、出租或交换任何用户数据。
+        </p>
+        <p>
+          Google Play 作为应用分发平台，可能按照 Google 的隐私政策处理安装、购买、崩溃等平台侧数据；
+          应用本身不包含 Google Play Services 的广告或分析组件。
         </p>
         <p class="muted">
           仅在下列情况下可能披露信息：为遵守适用法律、法规或有效法律程序；为保护用户、开发者或公众的安全与权利；
@@ -219,8 +250,8 @@
         </p>
       </section>
 
-      <section id="zh-6">
-        <h2><span class="num">06</span>数据保留与删除</h2>
+      <section id="zh-7">
+        <h2><span class="num">07</span>数据保留与删除</h2>
         <p>
           收藏、搜索历史和语言偏好会一直保存在本机，直到你主动处理：
         </p>
@@ -232,29 +263,47 @@
         </ul>
         <p class="muted">
           服务器访问日志只在运维和安全所需的最短期限内保留，随后按常规日志轮转策略删除或匿名化。
+          如需咨询或请求删除日志中的请求记录，请联系下方邮箱。
         </p>
       </section>
 
-      <section id="zh-7">
-        <h2><span class="num">07</span>儿童隐私</h2>
+      <section id="zh-8">
+        <h2><span class="num">08</span>外部链接</h2>
+        <p>
+          应用可能包含指向外部网页或应用商店的链接。点击后你会进入第三方网站，
+          这些网站不由我们运营，我们无法控制其内容或隐私做法。
+          建议你在使用前查看该网站的隐私政策。
+        </p>
+      </section>
+
+      <section id="zh-9">
+        <h2><span class="num">09</span>儿童隐私</h2>
         <p>
           本应用不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。由于应用不要求账号，也不收集姓名、邮箱、
           位置等信息，正常情况下不会持有儿童的个人数据。如果你认为儿童信息被不当处理，请联系我们删除。
         </p>
       </section>
 
-      <section id="zh-8">
-        <h2><span class="num">08</span>安全</h2>
+      <section id="zh-10">
+        <h2><span class="num">10</span>安全</h2>
         <p>
           本地数据存放在 Android 应用私有目录，受系统沙箱保护；网络同步使用 HTTPS 传输。
           但任何存储或传输方式都无法保证绝对安全，请妥善保管你的设备和解锁凭证。
         </p>
       </section>
 
-      <section id="zh-9">
-        <h2><span class="num">09</span>政策更新与联系</h2>
+      <section id="zh-11">
+        <h2><span class="num">11</span>政策更新</h2>
         <p>
-          如果应用功能或数据处理方式发生变化，我们会更新本页面并修改生效日期。重大变更会在应用内或商店页面提示。
+          如果应用功能或数据处理方式发生变化，我们会更新本页面并修改生效日期。
+          重大变更会在应用内或商店页面提示。更新自发布之日起生效。
+        </p>
+      </section>
+
+      <section id="zh-12">
+        <h2><span class="num">12</span>联系我们</h2>
+        <p>
+          如果你对本政策有疑问，或希望删除本机数据、咨询日志处理，请联系：
         </p>
         <div class="contact">
           <strong>开发者：bzl</strong>
@@ -268,7 +317,18 @@
 
     <article class="card" lang="en">
       <section>
-        <h2><span class="num">01</span>What we store</h2>
+        <p>
+          This policy explains how the Magnet Search Android app (package name today.auburn.yingshi.magnet)
+          handles your information. Magnet Search is provided by developer bzl and is intended for use as is.
+          By using the app, you agree to the information practices described in this policy.
+        </p>
+        <p class="muted">
+          This page is available in Chinese and English. If there is any inconsistency, the Chinese version controls.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="num">01</span>Information we collect and store</h2>
         <p>
           Magnet Search does not require an account and does not ask for your name, email address, phone number,
           location, or other identity information. The app stores only the following preferences and actions on your device:
@@ -280,7 +340,8 @@
         </table>
         <p class="muted">
           This data is stored only in the app’s private Android storage (SharedPreferences). It is not uploaded to our servers
-          and is not shared with advertisers, analytics providers, or other third parties.
+          and is not shared with advertisers, analytics providers, or other third parties. The app does not actively read
+          the Android Advertising ID or collect a device identifier.
         </p>
       </section>
 
@@ -294,7 +355,7 @@
       </section>
 
       <section>
-        <h2><span class="num">03</span>Network requests and server logs</h2>
+        <h2><span class="num">03</span>Log data</h2>
         <p>
           To receive incremental updates to the public magnet index, the app requests the developer-operated endpoint at
           <code>https://yingshi.auburn.today/api/app/sync</code>.
@@ -314,13 +375,25 @@
           They are not used for advertising or user profiling, and are not sold.
         </div>
         <p class="muted">
-          If you open an external website or app store from the app, that third party handles data under its own privacy policy.
-          This policy does not cover third-party websites.
+          The app contains no crash-reporting SDK. Crash, diagnostic, or installation data collected by Google Play
+          or Android is platform-side data handled under Google’s privacy policy, not data collected inside the app.
         </p>
       </section>
 
       <section>
-        <h2><span class="num">04</span>Permissions</h2>
+        <h2><span class="num">04</span>Cookies and local storage</h2>
+        <p>
+          This is a native Android app. It does not use cookies as an account identifier or for cross-app tracking.
+          Favorites, search history, and language preference are stored locally using Android SharedPreferences.
+        </p>
+        <p class="muted">
+          If you open an external website or app store from the app, that third party may use cookies or similar technologies
+          and handles data under its own privacy policy. This policy does not cover third-party websites.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="num">05</span>Permissions</h2>
         <p>The current version requests only:</p>
         <table>
           <tr><th><code>INTERNET</code></th><td>To receive incremental updates to the public magnet index.</td></tr>
@@ -333,10 +406,14 @@
       </section>
 
       <section>
-        <h2><span class="num">05</span>Third-party SDKs and sharing</h2>
+        <h2><span class="num">06</span>Service providers and sharing</h2>
         <p>
-          The app contains no advertising, analytics, crash-reporting, push-notification, or social-login SDK. We do not sell,
-          rent, or trade user data.
+          The app contains no advertising, analytics, crash-reporting, push-notification, or social-login SDK,
+          and does not actively read the Android Advertising ID. We do not sell, rent, or trade user data.
+        </p>
+        <p>
+          Google Play, as the app distribution platform, may process installation, purchase, and crash data under Google’s
+          privacy policy. The app itself does not include Google Play Services advertising or analytics components.
         </p>
         <p class="muted">
           Information may be disclosed only when required to comply with applicable law or valid legal process; to protect the
@@ -345,7 +422,7 @@
       </section>
 
       <section>
-        <h2><span class="num">06</span>Retention and deletion</h2>
+        <h2><span class="num">07</span>Retention and deletion</h2>
         <p>Favorites, search history, and language preference remain on your device until you act:</p>
         <ul>
           <li>remove a favorite in “Settings → Favorites”;</li>
@@ -355,12 +432,21 @@
         </ul>
         <p class="muted">
           Server access logs are retained only for the shortest period needed for operations and security, then deleted or
-          anonymized under standard log rotation.
+          anonymized under standard log rotation. Contact us if you have questions or wish to request deletion of a log entry.
         </p>
       </section>
 
       <section>
-        <h2><span class="num">07</span>Children’s privacy</h2>
+        <h2><span class="num">08</span>Links to other sites</h2>
+        <p>
+          The app may contain links to external websites or app stores. If you click a third-party link, you will be directed
+          to a site we do not operate. We have no control over its content or privacy practices, and we recommend reviewing
+          its privacy policy before use.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="num">09</span>Children’s privacy</h2>
         <p>
           This app is not directed to children under 13 and does not knowingly collect personal information from children.
           Because the app requires no account and collects no name, email address, or location, it does not normally hold
@@ -369,7 +455,7 @@
       </section>
 
       <section>
-        <h2><span class="num">08</span>Security</h2>
+        <h2><span class="num">10</span>Security</h2>
         <p>
           Local data is stored in the app’s private Android directory and protected by the operating system sandbox. Network
           sync uses HTTPS. No storage or transmission method is absolutely secure, so please protect your device and unlock
@@ -378,10 +464,17 @@
       </section>
 
       <section>
-        <h2><span class="num">09</span>Changes and contact</h2>
+        <h2><span class="num">11</span>Changes</h2>
         <p>
           If app features or data practices change, we will update this page and revise the effective date. Material changes
-          will be noted in the app or on the store listing.
+          will be noted in the app or on the store listing. Changes are effective when posted.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="num">12</span>Contact</h2>
+        <p>
+          If you have questions about this policy, or wish to delete local data or ask about log handling, contact us:
         </p>
         <div class="contact">
           <strong>Developer: bzl</strong>
